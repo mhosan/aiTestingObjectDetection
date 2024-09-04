@@ -1,4 +1,7 @@
-const fs = require("fs");
+const axios = require('axios');
+const fs = require('fs');
+const path = require('path');
+
 async function query(filename) {
 	const data = fs.readFileSync(filename);
 	const response = await fetch(
